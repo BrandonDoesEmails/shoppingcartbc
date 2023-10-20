@@ -14,9 +14,9 @@ const Header = () => {
             <NavLink className='link' to='/' end>Home</NavLink>
             <NavLink className='link' to='/cart'>Cart</NavLink>
         </nav>
-        <a href="#">
+        <Link to="/cart">
             <p>Cart: 6</p>
-        </a>
+        </Link>
     </header>
   )
 }
