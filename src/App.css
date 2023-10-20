@@ -1,0 +1,151 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  margin: auto;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+header .logo img {
+  max-width: 35px;
+  cursor: pointer;
+}
+
+header .logo span {
+  font-size: 18px;
+  color: #525252;
+  cursor: pointer;
+}
+
+header nav {
+  font-size: 18px;
+}
+
+header nav .link {
+  padding: 10px;
+}
+
+header nav .link.active {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+header nav a {
+  margin-left: 7px;
+  color: #000;
+  text-decoration: none;
+}
+
+header p {
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+}
+
+.card {
+  width: 350px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card img {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.card div p {
+  margin: 0;
+}
+
+.card div button {
+  background-color: #1c58ae;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  max-width: 150px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.card div button:hover {
+  background-color: #103f80;
+}
+
+.cart {
+  width: 100%;
+}
+
+.cart h1 {
+  text-align: center;
+}
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  justify-content: space-between;
+  margin: 30px 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cart-card img {
+  height: 100px;
+  width: 150px;
+  margin-right: 10px;
+}
+.cart-card div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.cart-card .productName {
+  width: 350px; 
+  margin-right: 10px;
+}
+
+.cart-card .productPrice {
+  width: 100px;
+}
+
+.cart-card button {
+  background-color: #ac0d14;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+}
