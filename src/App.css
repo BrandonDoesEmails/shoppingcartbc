@@ -50,7 +50,7 @@ header p {
   font-weight: 500;
 }
 
-.card {
+.productCard {
   width: 350px;
   box-shadow: var(--box-shadow);
   display: flex;
@@ -61,7 +61,7 @@ header p {
   border-radius: 5px;
 }
 
-.card img {
+.productCard img {
   max-width: 100%;
   height: 250px;
   object-fit: cover;
@@ -69,24 +69,22 @@ header p {
   border-radius: 5px;
 }
 
-.card p {
-  font-size: 18px;
-  font-weight: 500;
+.productCard .name {
   margin: 10px 0;
 }
 
-.card div {
+.productCard .action {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0;
 }
 
-.card div p {
-  margin: 0;
+.productCard p {
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.card div button {
+.productCard button {
   background-color: #1c58ae;
   border-radius: 5px;
   border: 0;
@@ -97,8 +95,16 @@ header p {
   cursor: pointer;
 }
 
-.card div button:hover {
+.productCard button:hover {
   background-color: #103f80;
+}
+
+.productCard .remove{
+  background-color: #ac0d14;
+}
+
+.productCard .remove:hover{
+  background-color: #8e090f;
 }
 
 .cart {
@@ -109,43 +115,41 @@ header p {
   text-align: center;
 }
 
-.cart-card {
+.cartCard {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   box-shadow: var(--box-shadow);
-  justify-content: space-between;
+  border-radius: 5px;
   margin: 30px 10px;
   padding: 10px;
+}
+
+.cartCard img {
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
   border-radius: 5px;
 }
 
-.cart-card img {
-  height: 100px;
-  width: 150px;
-  margin-right: 10px;
-}
-.cart-card div {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.cart-card .productName {
+.cartCard .productName {
   width: 350px; 
   margin-right: 10px;
 }
 
-.cart-card .productPrice {
+.cartCard .productPrice {
   width: 100px;
 }
 
-.cart-card button {
+.cartCard button {
   background-color: #ac0d14;
   border: 0;
-  border-radius: 5px;
   color: #fff;
-  cursor: pointer;
+  border-radius: 5px;
   padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cartCard button:hover {
+  background-color: #8e090f;
 }

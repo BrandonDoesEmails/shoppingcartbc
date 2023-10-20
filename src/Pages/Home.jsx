@@ -1,4 +1,4 @@
-import Card from '../components/Card';
+import ProductCard from '../components/ProductCard';
 import { list } from '../consts/consts';
 import { useTitle } from '../hooks/useTitle';
 
@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <main>
         {list.map((item) => (
-          <Card key={item.name} {...item} />
+          <ProductCard key={item.name} {...item} />
         ))}
     </main>
   )
