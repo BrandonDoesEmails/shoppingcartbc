@@ -6,8 +6,8 @@ const Home = () => {
   useTitle('Home');
   return (
     <main>
-        {list.map((item) => (
-          <ProductCard key={item.name} {...item} />
+        {list.map((product) => (
+          <ProductCard key={product.name} product={product} />
         ))}
     </main>
   )
